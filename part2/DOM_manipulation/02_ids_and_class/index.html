@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM MANIPULATION</title>
+</head>
+
+<body>
+    <ul id='element'>
+        <li class='list-item'>first element</li>
+        <li class='list-item'>second element</li>
+        <li class='list-item'>third element</li>
+    </ul>
+    <table>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>Four</td>
+        </tr>
+    </table>
+    <script>
+        // ID Search
+
+        // 1st way
+        // element.style.background = "pink"
+
+        // 2nd way
+        //getting id and change it background color
+        // const ulTag = document.getElementById('element')
+        // ulTag.style.backgroundColor = 'pink'
+        // console.log()
+
+
+        //class search
+
+        // const listItem = document.getElementsByClassName('list-item')
+        // for (let i = 0; i < listItem.length; i++) {
+        //     listItem[i].style.backgroundColor = 'pink'
+        // }
+
+        // console.log(listItem)
+
+
+        // tag name search
+        // const findByTagName = document.getElementsByTagName('table')
+        // console.log(findByTagName)
+
+
+        // name search
+        const findByName = document.getElementsByName('ul')
+        console.log(findByName)
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM MANIPULATION</title>
+</head>
+
+<body id="body">
+    <ul id='element' data="valid">
+        <li class='list-item'>first element</li>
+        <li class='list-item'>second element</li>
+        <li class='list-item'>third element</li>
+    </ul>
+
+    <table>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>Four</td>
+        </tr>
+    </table>
+    <script>
+        // hume ise access kr skte hai console kra ke direct this will give us output
+        // console.log(element.id)      // giving us id
+
+        // but in this case we are not able to get the output in console
+        // beacuse jo bhi predefined hote hai html me like id class and all use hum direct acces kr skte hai like console kra k but baaki o attribute hum banayegnge usko direct aise accesss nhi kr skte unko acces krne ka tareeka alag hota haai 
+        // console.log(element.data)    
+
+        // accessing attribute that we make -------accessiing in right way
+        // console.log(element.getAttribute('data'))
+
+
+        // for setting attribute
+        // console.log(element.setAttribute('order-placed', 'pending'))
+
+        // after setting we get that element 
+        // console.log(element.getAttribute('order-placed'))
+
+        // similarly we have hasAttribute for checking if that is present or not
+        // console.log(element.hasAttribute('order-placed'))       // that will give us the boolean value either true or false
+
+        // for removing attribute
+        // console.log(element.removeAttribute('order-placed'))
+
+
+
+        // for checking all the attribute
+        console.log(element.attributes)
+
+    </script>
+</body>
+
+</html>

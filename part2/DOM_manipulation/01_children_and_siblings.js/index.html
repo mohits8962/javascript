@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM MANIPULATION</title>
+</head>
+
+<body>
+    <ul>
+        <li>first element</li>
+        <li>second element</li>
+        <li>third element</li>
+    </ul>
+    <table>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>Four</td>
+        </tr>
+    </table>
+    <script>
+        // // root node
+        // console.log(document.documentElement)
+        // console.log(document.body)
+        // console.log(document.head)
+
+        // //childrens
+        // console.log(document.body.childNodes)
+        // console.log(document.body.children)
+
+        //y ek object k form me hota hai but lagta hai ki aaray hai hum agar method bhi check kre to array methods show nhi honge
+
+        //how to traverse children
+        // for(node of document.body.children){
+        //     console.log(node)
+        // }
+
+        //how to consvert that object into array 
+        // const childrenBody = Array.from(document.body.children)
+        // console.log(childrenBody)
+
+        // console.log(document.body.firstElementChild)
+        // console.log(document.body.lastElementChild)
+
+        //siblings
+        // const ulTag = document.body.children[0]
+        // console.log(ulTag.nextElementSibling)
+
+        // const firstli = ulTag.children[0]
+        // const secondli = ulTag.children[1]
+        // console.log(secondli.previousElementSibling.textContent)
+
+
+        //table dom manipulation
+        const tableTag = document.body.children[1]
+        // console.log(tableTag.rows)
+        console.log(tableTag.tBodies[0].rows[0].cells[1].style = 'background-color:pink')
+
+
+    </script>
+</body>
+
+</html>

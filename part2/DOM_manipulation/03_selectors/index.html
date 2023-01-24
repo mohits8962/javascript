@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM MANIPULATION</title>
+</head>
+
+<body>
+    <ul id='element'>
+        <li class='list-item'>first element</li>
+        <li class='list-item'>second element</li>
+        <li class='list-item'>third element</li>
+    </ul>
+
+    <!-- // live and static
+    // query selector static hote hai or get element wale functions run time pe change ho jae hai -->
+
+    <!-- using get element -->
+
+    <!-- agar getelement by classname use krte or neeche console krate hai to odno ajagah alag dikhega upar node me ek dihayega neeche 2 dikhayega -->
+
+    <!-- because get element wale fucntion live hote hai wo reference ko pass krte hai data ko nahi -->
+
+    <!-- get element reference bhejta to jb hum kuch change krte hai to value bhi change ho jayegii -->
+
+    <!-- <div class="allDivs">First Div</div>
+    <script>
+        const allDivs = document.getElementsByClassName('allDivs')
+        console.log(allDivs)
+    </script>
+    <div class="allDivs">Second Div</div> -->
+
+
+
+    <!-- using query selector -->
+
+    <!-- isko upar console krao ya neeche y same hi dikhayega console pe node list ka element wo ek hi element dega  -->
+
+    <!-- kyuki jab se query selector banega to usko us time jitta milega wo lega or varriable me store kra k bhul jayega -->
+
+    <!-- yaha pe data jaata hai na ki reference to jo data ek baar store hogya wo whi rhega change nhi ho skta -->
+
+    <!-- <div class="allDivs">First Div</div>
+    <script>
+        const allDivs = document.querySelectorAll('.allDivs')
+        console.log(allDivs)
+    </script>
+    <div class="allDivs">Second Div</div> -->
+
+
+
+    <table>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>Four</td>
+        </tr>
+    </table>
+    <script>
+        //selectors
+
+        // for class
+
+        //query selectors
+        // const listItem = document.querySelector(".list-item")
+        // console.log(listItem)
+
+        //query selectors all
+        // const listAllItem = document.querySelectorAll(".list-item")
+        // console.log(listAllItem)
+
+        // ------------------------
+
+        // for id
+
+        //query selectors
+        // const listItem = document.querySelector("#element")
+        // console.log(listItem)
+
+        // ------------------------
+
+        // for finding ul's last child
+        // const listAllItem = document.querySelectorAll("ul>li:last-child")
+        // console.log(listAllItem)
+
+
+        // for getting his text content
+        // const listAllItem = document.querySelectorAll("ul>li:last-child")
+        // console.log(listAllItem[0].textContent)
+
+        // another way to select it and seeing his text content
+        // const listAllItem = document.querySelectorAll("ul>li:nth-child(2)")
+        // console.log(listAllItem[0].textContent)
+
+        // ------------------------
+
+        console.log(allDivs)
+
+    </script>
+</body>
+
+</html>
